@@ -1,4 +1,5 @@
 # PROGRAMACION LOGICA Y FUNCIONAL 
+<<<<<<< HEAD
 
  ## Funciones en clisp
 
@@ -476,3 +477,7 @@ AL igual que la primer tarea de las figuras geometricas está se encarga de soli
 (funcall multiplicacion x y))
 
 ```
+=======
+ ## Tarea 1 areas y perimetros de figuras geometricas
+ ### 
+>>>>>>> 4473b16 (Mensaje descriptivo del commit)
