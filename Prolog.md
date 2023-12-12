@@ -525,6 +525,251 @@ AL igual que la primer tarea de las figuras geometricas está se encarga de soli
 
 ```
 
+## Tarea de hechos y reglas de familia
+
+
+``` swi-prolog
+padre(german).
+padre(juan).
+padre(roberto).
+padre(carlos).
+padre(armando).
+padre(fernando).
+padre(alejandro).
+padre(arturo).
+
+hermano(german).
+hermano(juanp).
+hermano(roberto).
+hermano(chino).
+hermano(armando).
+hermano(fernando).
+hermano(alejandro).
+hermano(efrain).
+hermano(oscarin).
+
+madre(yaya).
+madre(tita).
+madre(moraima).
+madre(gaby).
+madre(yawna).
+madre(gaby).
+madre(julieta).
+madre(vero).
+madre(julieta).
+madre(yola).
+madre(celia).
+
+hermana(moraima).
+hermana(gaby).
+
+hijo(rodrigo).
+hijo(andres).
+hijo(emilio).
+hijo(julian).
+hijo(armandi).
+hijo(betito).
+hijo(pablito).
+
+hija(sofia).
+hija(marian).
+hija(regi).
+hija(pau).
+
+padrede(german,rodrigo).
+padrede(german,sofia).
+padrede(armando,armandi).
+padrede(armando,regi).
+padrede(arturo,andres).
+padrede(arturo,emilio).
+
+madrede(moraima,rodrigo).
+madrede(moraima,sofia).
+madrede(yawna,armandi).
+madrede(yawna,regi).
+madrede(celia,andres).
+madrede(celia,emilio).
+
+hermanode(rodrigo,sofia).
+hermanode(andres,emilio).
+hermanode(emilio,andres).
+hermanode(armandi,regi).
+hermanode(pablito,pau).
+
+hermanade(sofia,rodrigo).
+hermanade(regi,armandi).
+hermanade(pau,pablito).
+hermanade(moraima,efrain).
+hermanade(moraima,oscarin).
+
+
+```
+
+
+
+
+## Analisis de ejercicio de Einstain para normalizacion 
+Se hizo el chatbot para conocer mucho acerca de minecraft, el cancer de pancreas y se agregaron templates para conversación más fluida.
+
+``` swi-prolog
+El britanico vive en la casa roja
+El sueco tiene un perro como mascota
+El danés toma té
+El noruego vive en la primera casael aleman fuma prince
+la casa verde está inmediatamente a la izquierda de la blanca
+el dueño de la casa verde beeb cafe
+el propietario que fuma pall mall cria pajaros
+El dueño de la casa amarilla fuma dunhill
+El hombre que vive en la casa del centro bebe leche
+El vecino que fuma Blends vive al lado del que tiene un gato
+El hombre que tieAne un caballo vive al lado del que fuma dunhill
+El propietario que fuma bluemaster toma cerveza
+El vecino que fuma Blends vive al lado del que toma agua
+El noruego vive al lado de la casa azul 
+
+
+"El británico vive en la casa roja."
+
+Tipos: Nacionalidad, Color, Casa.
+Constantes:
+britanico (constante de individuo)
+roja (constante de individuo)
+Contenido:
+Nacionalidad = britanico
+Color = roja
+Axioma: vive_en(britanico, roja) (unaria)
+"El sueco tiene un perro como mascota."
+
+Tipos: Nacionalidad, Mascota.
+Constantes:
+sueco (constante de individuo)
+perro (constante de individuo)
+Contenido:
+Nacionalidad = sueco
+Mascota = perro
+Axioma: tiene_mascota(sueco, perro) (binaria)
+"El danés toma té."
+
+Tipos: Nacionalidad, Bebida.
+Constantes:
+danes (constante de individuo)
+te (constante de individuo)
+Contenido:
+Nacionalidad = danes
+Bebida = te
+Axioma: toma(danes, te) (binaria)
+"El noruego vive en la primera casa."
+
+Tipos: Nacionalidad, Casa.
+Constantes:
+noruego (constante de individuo)
+1 (constante de individuo)
+Contenido:
+Nacionalidad = noruego
+Casa = 1
+Axioma: vive_en(noruego, 1) (binaria)
+"El alemán fuma Prince."
+
+Tipos: Nacionalidad, MarcaCigarrillo.
+Constantes:
+aleman (constante de individuo)
+prince (constante de individuo)
+Contenido:
+Nacionalidad = aleman
+MarcaCigarrillo = prince
+Axioma: fuma(aleman, prince) (binaria)
+"La casa verde está inmediatamente a la izquierda de la blanca."
+
+Tipos: Color, Casa.
+Constantes:
+verde (constante de individuo)
+blanca (constante de individuo)
+Contenido:
+Color = verde
+Color = blanca
+Axioma: izquierda_de(verde, blanca) (binaria)
+"El dueño de la casa verde bebe café."
+
+Tipos: Color, Bebida.
+Constantes:
+verde (constante de individuo)
+cafe (constante de individuo)
+Contenido:
+Color = verde
+Bebida = cafe
+Axioma: bebe_cafe(verde) (unaria)
+"El propietario que fuma Pall Mall cría pájaros."
+
+Tipos: MarcaCigarrillo, Mascota.
+Constantes:
+pall_mall (constante de individuo)
+pájaros (constante de individuo)
+Contenido:
+MarcaCigarrillo = pall_mall
+Mascota = pájaros
+Axioma: cria_pajaros(fuma(pall_mall, _)) (unaria)
+"El dueño de la casa amarilla fuma Dunhill."
+
+Tipos: Color, MarcaCigarrillo.
+Constantes:
+amarilla (constante de individuo)
+dunhill (constante de individuo)
+Contenido:
+Color = amarilla
+MarcaCigarrillo = dunhill
+Axioma: fuma(dunhill, amarilla) (binaria)
+"El hombre que vive en la casa del centro bebe leche."
+
+Tipos: Casa, Bebida.
+Constantes:
+centro (constante de individuo)
+leche (constante de individuo)
+Contenido:
+Casa = centro
+Bebida = leche
+Axioma: bebe_leche(centro) (binaria)
+"El vecino que fuma Blends vive al lado del que tiene un gato."
+
+Constantes:
+blends (constante de individuo)
+gato (constante de individuo)
+Variables: VecinoVar (variable de individuo), GatoVar (variable de individuo)
+Axioma: vecino(fuma(blends, VecinoVar), tiene_gato(GatoVar)) (ternaria)
+"El hombre que tiene un caballo vive al lado del que fuma Dunhill."
+
+Constantes:
+caballo (constante de individuo)
+dunhill (constante de individuo)
+Variables: CaballoVar (variable de individuo), DunhillVar (variable de individuo)
+Axioma: vecino(tiene_caballo(CaballoVar), fuma(dunhill, DunhillVar)) (ternaria)
+"El propietario que fuma BlueMaster toma cerveza."
+
+Tipos: MarcaCigarrillo, Bebida.
+Constantes:
+blue_master (constante de individuo)
+cerveza (constante de individuo)
+Contenido:
+MarcaCigarrillo = blue_master
+Bebida = cerveza
+Axioma: bebe_cerveza(fuma(blue_master, _)) (binaria)
+"El vecino que fuma Blends vive al lado del que toma agua."
+
+Constantes:
+blends (constante de individuo)
+agua (constante de individuo)
+Variables: VecinoVar (variable de individuo)
+Axioma: vecino(fuma(blends, VecinoVar), bebe_agua(AguaVar)) (ternaria)
+"El noruego vive al lado de la casa azul."
+
+Constantes:
+noruego (constante de individuo)
+azul (constante de individuo)
+Variables: Nor
+
+
+```
+
+
 
 
 ## Proyecto CHATBOT - Cancer de pancreas y minecraft
