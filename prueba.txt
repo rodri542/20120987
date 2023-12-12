@@ -5,6 +5,7 @@ padre(carlos).
 padre(armando).
 padre(fernando).
 padre(alejandro).
+padre(arturo).
 
 hermano(german).
 hermano(juanp).
@@ -26,6 +27,7 @@ madre(julieta).
 madre(vero).
 madre(julieta).
 madre(yola).
+madre(celia).
 
 hermana(moraima).
 hermana(gaby).
@@ -43,3 +45,28 @@ hija(marian).
 hija(regi).
 hija(pau).
 
+padrede(german,rodrigo).
+padrede(german,sofia).
+padrede(armando,armandi).
+padrede(armando,regi).
+padrede(arturo,andres).
+padrede(arturo,emilio).
+
+madrede(moraima,rodrigo).
+madrede(moraima,sofia).
+madrede(yawna,armandi).
+madrede(yawna,regi).
+madrede(celia,andres).
+madrede(celia,emilio).
+
+hermanode(rodrigo,sofia).
+hermanode(andres,emilio).
+hermanode(emilio,andres).
+hermanode(armandi,regi).
+hermanode(pablito,pau).
+
+hermanade(sofia,rodrigo).
+hermanade(regi,armandi).
+hermanade(pau,pablito).
+hermanade(moraima,efrain).
+hermanade(moraima,oscarin).

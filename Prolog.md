@@ -657,6 +657,55 @@ template([hola,quien, eres,'?'], [Hola, yo, soy, Eliza],[]).
 
 template([dime, que, es, lo,que,sabes,'?'], ["Yo se mucho de minecraft, del cancer de pancreas y se todo de ti :D"], []).
 
+
+
+template([hola], ['¡Hola! ¿Cómo estás hoy?'], []).
+
+template([estoy, bien, gracias, y, tú], ['Me alegra escuchar que estás bien. Yo también estoy bien, gracias por preguntar. ¿Cómo ha sido tu día hasta ahora?'], []).
+
+template([mi, día, ha, sido, bueno], ['Eso suena genial. ¿Hubo algo en particular que hizo que tu día fuera tan bueno?'], []).
+
+template([sí, tuve, un, buen, día, en, el, trabajo], ['¡Eso es fantástico! ¿Hay algo específico que destacarías sobre tu jornada laboral?'], []).
+
+template([sí, logré, completar, un, proyecto, importante], ['¡Increíble logro! Debe ser gratificante. ¿En qué consistía el proyecto?'], []).
+
+template([era, un, proyecto, de, desarrollo, de, software], ['Interesante. Soy curioso acerca de la programación. ¿Qué lenguaje de programación usaste?'], []).
+
+template([utilicé, principalmente, Python, y, JavaScript], ['Dos lenguajes muy versátiles. ¿Tienes algún proyecto favorito en el que hayas trabajado recientemente?'], []).
+
+template([sí, estoy, desarrollando, una, aplicación, web], ['¡Excelente! ¿De qué trata la aplicación web que estás desarrollando?'], []).
+
+template([es, una, plataforma, para, compartir, recetas, de, cocina], ['Suena delicioso. ¿Cuál es tu receta favorita hasta ahora?'], []).
+
+template([me, encanta, preparar, lasaña], ['¡La lasaña es increíble! ¿Tienes algún toque especial en tu receta de lasaña?'], []).
+
+template([sí, le, agrego, una, capa, extra, de, queso, mozzarella], ['¡Eso suena delicioso! ¡Amo el queso mozzarella! ¿Tienes algún otro truco culinario que quieras compartir?'], []).
+
+template([sí, también, me, gusta, experimentar, con, especias], ['Genial. Experimentar con especias puede hacer que los platos sean realmente únicos. ¿Tienes alguna especia favorita?'], []).
+
+template([mi, favorita, es, el, comino], ['¡Buena elección! El comino agrega un toque delicioso. Cambiando de tema, ¿puedo saber más sobre ti? ¿Cómo te describirías en pocas palabras?'], []).
+
+template([soy, una, persona, creativa, y, apasionada, por, la, tecnología], ['Eso suena fascinante. La creatividad y la tecnología van de la mano. ¿En qué áreas específicas te apasiona trabajar?'], []).
+
+template([me, encanta, el, diseño, gráfico, y, la, inteligencia, artificial], ['Dos campos muy emocionantes. ¿Hay algún proyecto en particular en el que estés trabajando actualmente que puedas compartir?'], []).
+
+template([sí, estoy, desarrollando, un, modelo, de, reconocimiento, facial], ['¡Interesante! El reconocimiento facial tiene aplicaciones diversas. ¿Cómo te metiste en ese proyecto?'], []).
+
+template([siempre, he, encontrado, fascinante, el, poder, de, la, visión, por, computadora], ['Completamente de acuerdo. La visión por computadora es asombrosa. Cambiando de tema nuevamente, ¿hay algo más que te gustaría saber o compartir?'], []).
+
+template([¿cuál, es, tu, hobby, favorito?], ['¡Buena pregunta! Me encanta aprender sobre diferentes culturas y explorar la diversidad culinaria. ¿Y tú?'], []).
+template([mi, hobby, favorito, es, la, fotografía], ['¡Eso suena increíble! La fotografía es una forma hermosa de capturar momentos. ¿Tienes alguna foto favorita que hayas tomado recientemente?'], []).
+
+template([sí, tomé, una, foto, espectacular, durante, mis, vacaciones], ['¡Maravilloso! Las fotos de vacaciones son siempre especiales. ¿A dónde fuiste de vacaciones?'], []).
+
+template([fui, a, la, costa, sur, y, disfruté, de, hermosas, playas], ['¡Qué suerte! Las playas del sur son impresionantes. ¿Tienes algún recuerdo especial de ese viaje que quieras compartir?'], []).
+
+template([sí, presencié, una, puesta, de, sol, increíble], ['Las puestas de sol son mágicas. ¿Cómo describirías esa puesta de sol en particular?'], []).
+
+template([era, una, explosión, de, colores, cálidos, que, pintaban, el, cielo], ['¡Qué hermosa descripción! Puedo imaginarlo. Bueno, ha sido genial conocerte más. ¿Hay algo más en lo que pueda ayudarte o que quieras compartir?'], []).
+
+template([no, por, ahora, gracias], ['¡Entendido! Si alguna vez necesitas hablar o tienes más preguntas, estoy aquí. ¡Que tengas un maravilloso día!'], []).
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %MINECRAFT
 
@@ -753,6 +802,11 @@ template([cuál, es, el, pronóstico, del, cáncer, de, páncreas, '?'], ['El pr
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
 
 
 
